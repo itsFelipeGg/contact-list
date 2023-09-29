@@ -6,7 +6,14 @@ let listacontacto = [
   "manuela zuluaga",
 ];
 
-function agregarcontactos(nuevocontacto) {
+function agregarcontactos(id, nombres, apellidos, telefono, ubicacion) {
+  const agregarcontactos = {
+    id: id,
+    nombres: nombres,
+    apellidos: apellidos,
+    telefono: telefono,
+    ubicacion: ubicacion,
+  };
   listacontacto.push(nuevocontacto);
 }
 

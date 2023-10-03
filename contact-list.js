@@ -1,23 +1,54 @@
-let listacontacto = [
-  "alexis marquez",
-  "mauricio restrepo",
-  "ethan romero",
-  "hamminton piñeros",
-  "manuela zuluaga",
+let listadecontacto = [
+  {
+    Id: "1",
+    Nombre: "Sergio",
+    Apellido: "Moleades",
+    Telefono: "+376 452986363",
+    Ubicacion: "la bella andorra",
+    Ciudad: "andorra",
+    Direccion: "carretera de la caubella 1 ad400 la massana andorra",
+  },
+  {
+    Id: "2",
+    Nombre: "Jose",
+    Apellido: "Garcia",
+    Telefono: "+57 3004835200",
+    Ubicacion: "Colombia",
+    Ciudad: "Cartagena",
+    Direccion: "calle 121 #07-94",
+  },
+  {
+    Id: "3",
+    Nombre: "Isabella",
+    Apellido: "Lopez",
+    Telefono: "+57 3215595863",
+    Ubicacion: "Colombia",
+    Ciudad: "Pereida",
+    Direccion: "Dig 31b #71-147",
+  },
 ];
 
-function agregarcontactos(nuevocontacto) {
-  listacontacto.push(nuevocontacto);
+function añadirContacto(contacto) {
+  listaContacto.push(contacto);
 }
 
-agregarcontactos("jose gracia");
+let nuevoContacto = {
+  Id: "4",
+  Nombre: "Haminto",
+  Apellido: "Piñeros",
+  Telefono: "+57 3228817247",
+  Ubicacion: "Colombia",
+  Ciudad: "El Meta",
+  Direccion: "nf",
+};
 
-function borrarcontacto(borrar) {
-  listacontacto.splice(borrar, 1);
-}
+añadirContacto(nuevoContacto);
 
-function imprimircontacto() {
-  for (let i = 0; i < listacontacto.length; i++) {
-    console.log(listacontacto[i]);
+function eliminarContacto(eliminar) {
+  const posicion = listaContacto.indexcls(eliminar);
+  if (posicion !== -1) {
+    listaContacto.splice(posicion, 1);
   }
 }
+eliminarContacto(listaContacto[1]);
+console.log(listaContacto);
